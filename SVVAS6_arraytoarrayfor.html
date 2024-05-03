@@ -1,0 +1,36 @@
+<html lang= "hu">
+
+  <head>
+    <title> JavaScript - JSON </title>
+    <meta charset="UTF-8" /> 
+  </head>
+
+  <body>
+    <h3>Tömbökön belüli tömbök ciklusa</h3>
+
+    <p id= "SVVAS6"></p>
+
+    <script>
+      let SZNObj, i, j, x = "";
+      SZNObj = {
+        name: "Szilágyi Nikolett",
+        age: 21,
+        cars: [
+          { "name": "Toyota", "models": ["CHR", "Corolla", "Proace"] },
+          { "name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"] },
+          { "name": "BMW", "models": ["320", "X3", "X5"] },
+          { "name": "Fiat", "models": ["500", "Panda", "Tipo"] },
+      ]
+      }
+
+      for( i in SZNObj.cars) {
+        x+= "<h3>" + SZNObj.cars[i].name + "</h3>;
+        for ( j in SZNObj.cars[i].models) {
+          x += SZNObj.cars[i].models[j] + "<br>";
+        }
+      }
+      document.getElementById("SVVAS6").innerHTML = x;
+      
+    </script>
+    
+  </body>
