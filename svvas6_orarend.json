@@ -6,6 +6,20 @@
     "ig": 16
   },
   "helyszin": "In103",
+  "cím"
+  {
+    "street" : "jezsuiták tere",
+    "city" : "miskolc",
+    "code" : "1120"
+  }
   "oktato": "Dr. Bednarik László",
-  "szak": "PIT, MI"
+  "szak": "PIT, MI",
+  "phone number" 
+  [
+    { "type": "Vezetékes:",
+    "number": "0646 555-123" },
+  { "type" : "mobil",
+  "number": "0670 555-4567"}
+  ]
 }
+
