@@ -6,14 +6,26 @@
       });
 
         $.getJson(svvas6_orarend.json , function (data) {
+          $('#stg').html('<h2>Miskolci Egyetem</ h2>');
+          $('#stg').appaned('<p><b> Cím: </ b>' data.cim.code + ''+ data.cim.city +''+ data.cim.street + </p>');
+          $('#stg').appaned('<p><b> Telefonszamok: </ b><ul>');
 
+          for(i=0, i<data["phone number"].length;i++){
+             $('#stg').appened('<li>+ data["phone number"][i].type+''+ data["phone number"][i].number +'</li>');
+          }
           $('#stg').appaned('<p><h3> MI Órarend 2024 tavasz</ h3><ul>');
 
           $('#stg').appaned('<p><b> Kurzusnev:</ b>' + data.kurzusnev + </ p>);
           $('#stg').appaned('<p><b> Oktató:</ b>' + data.oktato + </ p>);
           $('#stg').appaned('<p><b> Szak:</ b>' + data.szak + </ p>);
           $('#stg').appaned('<p><b> Időpont:</ b>' + data.idopont + </ p>);
-          idopont.nap + "<br> 
+          idopont.nap + "<br>&nbsp;&nbsp;Tól;&nbsp;" + data.idopont.tol + "<br>&nbsp;&nbsp;Ig;&nbsp;" +data.idopont.ig + "<br>);
+
+          $('#stg').appaned('<p><b>Helyszín:<b>' + data.helyszin + '</p>);
+
+                            });
+            });
+      });
     </script>
   
   </head>
