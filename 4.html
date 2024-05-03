@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery szolgáltatásai</title>
+    <script src="jquery3.7.1.js"></script>
+    <script src="4.js"></script>
+    <style>
+      .inputField {
+        border: 1px solid black;
+      }
+      .inputField:hover {
+        border-color: red;
+      }
+      .inputField.active {
+        background-color: lightblue;
+      }
+      #form {
+        background-color: lightblue;
+        width: 350px;
+        margin-bottom: 10px;
+      }
+
+      #header {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      #form label {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      #form button {
+        margin: 20px;
+        font-weight: 100;
+      }
+
+      .button {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1 id="fejlec">jQuery feladatok</h1></header>
+
+    <p id="first">
+      <strong
+        >A jQuery egy JavaScript programozói könyvtár, amelyet John Resig
+        kezdett fejleszteni.</strong
+      >
+    </p>
+    <p id="second">
+      Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal
+      DOM-ja.
+    </p>
+    <p id="third">
+      Effekteket és animációkat adhatunk HTML elemeinkhez. Számtalan plugint
+      írtak hozzá.
+    </p>
+
+    <button id="buttonHideŐ" onclick="hide3()">Elrejt</button>
+    <button id="buttonShowP" onclick="show3()">Megjelenít</button>
+    <button onclick="hideShow()">Ki/Bekapcsol</button>
+
+    <br /><br />
+
+    <form id="form" action="form">
+      <header id="header">Űrlap</header>
+
+      <label for="nev"> <strong> Név:</strong></label>
+      <input id="inputField" type="text" class="inputField" /> <br /><br />
+      <label for="email"><strong>E-mail:</strong></label>
+      <input id="inputField" type="text" class="inputField" /> <br />
+      <br />
+      <label for="jelszo"><strong>Jelszó:</strong></label>
+      <input id="inputField" type="password" class="inputField" /> <br />
+      <br />
+
+      <button id="jelentkezes">jelentkezés</button>
+    </form>
+
+    <button onclick="opacity1()">Áttetszőség = 0.1</button>
+    <button onclick="opacity2()">Áttetszőség = 0.5</button>
+    <button onclick="opacity3()">Áttetszőség = 0.8</button> <br />
+    <br />
+    <button onclick="hideForm()">Elrejt</button>
+    <button onclick="showForm()">Megjelenít</button>
+    <button onclick="hideShowForm()">Ki/Bekapcsol</button>
+  </body>
+</html>
