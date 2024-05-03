@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery szolgáltatásai</title>
+    <script src="jquery3.7.1.js"></script>
+    <script src="3.js"></script>
+
+    <style>
+      .inputField {
+        border: 1px solid black;
+      }
+
+      .inputField:hover {
+        border-color: red;
+      }
+      .inputField.active {
+        background-color: lightblue;
+      }
+      .table {
+        margin: 5px;
+        padding: 5px;
+      }
+      .td {
+        margin: 5px;
+        padding: 5px;
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <h2 class ="fejlec">jQuery feladatok</h2>
+
+    <p id="first">
+      A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett
+      fejleszteni.
+      <label id="clickLbl">
+        <strong>Kattints ide</strong>, és eltűnik</label>
+    </p>
+    <p id="second">
+      Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal
+      DOM-ja.
+      <label id="clickLbl">
+        <strong>Kattints ide duplán</strong> és eltűnik</label>
+    </p>
+
+    <form action="form">
+      <label for="nev"> <strong> Név:</strong></label>
+      <input id="inputField" type="text" class="inputField" /> <br /><br />
+      <label for="email"><strong>E-mail:</strong></label>
+      <input id="inputField" type="text" class="inputField" /> <br />
+      <br />
+      <label for="jelszo"><strong>Jelszó:</strong></label>
+      <input id="inputField" type="password" class="inputField" /> <br />
+      <br />
+    </form>
+    <button id="hover">jelentkezés</button>
+  </body>
+</html>
