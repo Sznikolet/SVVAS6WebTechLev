@@ -1,0 +1,23 @@
+<html lang="hu">
+  <head>
+    <script>
+      $(document).ready(function() {
+        $("#RDjson").click(function(){ 
+      });
+
+        $.getJson(svvas6_orarend.json , function (data) {
+
+          $('#stg').appaned('<p><h3> MI Órarend 2024 tavasz</ h3><ul>');
+
+          $('#stg').appaned('<p><b> Kurzusnev:</ b>' + data.kurzusnev + </ p>);
+          $('#stg').appaned('<p><b> Oktató:</ b>' + data.oktato + </ p>);
+          $('#stg').appaned('<p><b> Szak:</ b>' + data.szak + </ p>);
+          $('#stg').appaned('<p><b> Időpont:</ b>' + data.idopont + </ p>);
+          idopont.nap + "<br> 
+    </script>
+  
+  </head>
+  <body>
+    <h2>jQuery - AJAX feladat</h2>
+    <p><b>Kattintson az Adatok betöltése gpmbra</b></p>
+  </body>
