@@ -1,0 +1,27 @@
+Fánk rendelés: <p id="szoveg"></p>
+<button onclick="olvasas()">JSON beolvasás</button>
+<link rel=stylesheet type="text/css" href="style.css" title="alap">
+    </head>
+    <style type="style.css">
+        
+    </style>
+<script>
+	function olvasas() {
+		const JSONadat = '[{"Név":"Csöröge fánk","Ár":"800 ft", "Helyszín": "Miskolc"},{"Név":"Töltött fánk","Ár":"1000 ft",  "Helyszín": "Miskolc"},{"Név":"Szalagos fánk","Ár":"500 ft",  "Helyszín": "Miskolc"}]';
+
+		const obj = JSON.parse(JSONadat);
+        
+        var i=0;
+        var szovegKiir="";
+        
+        while(i < 3) {
+        szovegKiir += "Név: " + obj[i].Név + ", Ár: " + obj[i].Ár + ", Helyszín: " + obj[i].Helyszín + "<br>";
+        i++;
+        }
+        
+		document.getElementById("szoveg").innerHTML = szovegKiir;
+        
+}
+
+</script>
+
