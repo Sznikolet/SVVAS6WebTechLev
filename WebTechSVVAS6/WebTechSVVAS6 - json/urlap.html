@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    
+    <style>
+    
+        .req:valid {
+            border-color: green;
+            color: darkgreen;
+        }
+        .req:invalid {
+            border-color: red;
+            color: red
+        }
+        body, html {
+            font-family: 'Times New Roman', Times, serif;
+            background:url("kepek/donut_2.jpg"); 
+            background-size: 200%;
+            background-repeat: no-repeat;
+            width: 800px;
+
+        }
+        div {
+            background: url("kepek/donut_3.jpg");
+            border-radius: 50px;
+            padding: 20px;
+            width: 400px;
+            box-shadow: 0 5px 20px;
+            color: rgb(18, 86, 109)
+        }
+        label {
+            font-weight: bold;
+        }
+
+        input[type="range"] {
+            width: 70%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header style="font-size: xxx-large">
+       Kérem töltse ki az űrlapot!
+    </header>
+    <p></p>
+    <div>
+            <form method="post" id="urlap" name="urlap" action="feldolgozo.php"  target="_self">
+                <label for="name">Vezetéknév:</label>
+                <input type="text" id="nev" name="nev" class="req" placeholder="Írd be a Vezetéknevedet!" autofocus autocomplete="off" required pattern="[a-zA-Zöő]{5,50}"><br><br>
+                <label for="name">Keresztnév:</label>
+                <input type="text" id="nev" name="nev" class="req" placeholder="Írd be a Keresztnevedet!" autofocus autocomplete="off" required pattern="[a-zA-Zöő]{5,50}"><br><br>
+
+                <label for="doanut">Kedvenc fánk:</label>
+                <input list="fankok" id="fank" name="fank">
+                <datalist id="fankok">
+                    <option value="Töltött fánk">Töltött fánk:800ft
+                    <option value="Szalagos fánk">Szalagos fánk:500ft
+                    <option value="Csöröge fánk">Csöröge fánk:1000ft
+                    
+                </datalist><br><br>
+
+                <label for="age">Életkor:</label>
+                <input type="number" id="eletkor" name="eletkor" min="18" max="50"><br><br>
+
+                <label for="today">Válaszd ki a mai dátumot:</label>
+                <input type="date"> <br><br>
+
+                <label for="email">Email-cím:</label>
+                <input type="email" id="email" class="req" pattern=".+@example\.com" size="30" required  ><br><br>
+
+                <label for="Nem">Neme:</label>
+                <input type="radio" name="nem" id="ferfi" >
+                <label for="ferfi">Férfi</label>
+                <input type="radio" name="nem" id="no">
+                <label for="no">Nő</label><br><br>
+
+                <label for="hirlevel">Feliratkozik hírlevelünkre?:</label>
+                <input type="checkbox">
+                <label for="hirlevel">Igen</label> <br><br>
+
+                <label for="szin">Válasszon egy színt:</label>
+                <input type="color">
+
+                
+                
+                
+            </form>
+            <br><br><br>
+                <input type="submit"  value="ELKÜLDÖM" form="urlap" formaction="feldolgozo.php" formmethod="post" id="btn"></button>
+                
+                <input type="submit" value="Elküldöm ellenőrzés nélkül" form="urlap" formnovalidate formtarget="ujablak"></button>
+        </div>
+         <hr>
+   <a href="Main_page.html"><nav>Vissza a főoldalra</nav> </a>
+</body>
+
+</html>

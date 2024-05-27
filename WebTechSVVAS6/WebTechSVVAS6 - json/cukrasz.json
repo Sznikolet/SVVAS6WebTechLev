@@ -1,0 +1,29 @@
+[
+    {
+      "kurzus": "Cukrász képző",
+      "idopont": {
+        "nap": "hétfő, szerda, péntek",
+        "tol": "12:30",
+        "ig": "15:50"
+      },
+      "helyszin": "1. épület",
+      "szakacs": "Szilagyi Nikolett",
+      "szakma": "Cukrász",
+      "cim": {
+        "street": "Vörösmarty utca",
+        "city": "Miskolc",
+        "code": 3520
+      },
+      "phone number": [
+        {
+          "type": "Vezetékes:",
+          "number": "0646 555-123"
+        },
+        {
+          "type": "Mobil:",
+          "number": "0670 555-4567"
+        }
+      ]
+    }
+    
+  ]

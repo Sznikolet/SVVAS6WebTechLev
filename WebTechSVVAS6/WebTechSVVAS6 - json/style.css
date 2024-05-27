@@ -1,0 +1,20 @@
+body, html
+{ background:url("kepek/donut.jpg");
+    
+    }
+table {
+    width: 300px;
+    height: 300px;
+
+}
+td{
+    width: 100px;
+    height: 100px;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
